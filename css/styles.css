@@ -1,0 +1,457 @@
+/*
+COLOR PALETTE (matching existing site)
+#413E39 - deep brown purple (default background)
+#FFE595 Jasmine [light yellow] / rgb(255,229,149)
+#F7BF50 DEEP GOLDENROD / rgb(247,191,80)
+#241C0F Smokey Black / rgb(36,28,15)
+#F9F9F9 Seasalt [whitish lavender] / rgb(249,249,249)
+
+font-family: 'Barriecito', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+
+/*------------ Root Text Size ----------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+/*------------ Global Styles ----------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #413E39;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    background: rgb(255 255 255 / 0.8);
+}
+
+h1 {
+    font-family: 'Barriecito', cursive;
+    margin: 0 auto;
+    font-size: 6.7rem;
+    text-align: left;
+    line-height: 1.1;
+}
+
+h2 {
+    margin: 0 auto;
+    font-family: 'Barriecito', cursive;
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h3 {
+    margin: 0 auto;
+    font-family: 'Barriecito', cursive;
+    padding: 3px;
+    font-size: 3rem;
+    text-align: left;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: #F7BF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: #F9F9F9;
+}
+
+/*------------ About Page ----------------------------*/
+.about {
+    background-color: #413E39;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.about header::before {
+    background: url(../images/mountainRoad.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 200px;
+}
+
+.homeLink {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    background-color: #241C0F;
+    color: #F7BF50;
+    border: groove 1em #FFE595;
+    padding: 8px 16px;
+    border-radius: 40% 20% / 40% 20%;
+    text-decoration: none;
+    font-size: 1.8rem;
+    z-index: 1000;
+}
+
+.homeLink:hover {
+    color: #241C0F;
+    background-color: #F7BF50;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 10px 40px 40px;
+    max-width: 900px;
+}
+
+/*------------ Section Styles ----------------------------*/
+section {
+    margin: 40px 0;
+    padding: 30px 40px;
+}
+
+section h2 {
+    border-bottom: 3px solid #F7BF50;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.sectionContent {
+    margin-top: 20px;
+}
+
+.sectionContent p {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.tagline {
+    font-size: 2.1rem;
+    font-style: italic;
+    color: #241C0F;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+/*------------ About Me Section ----------------------------*/
+.aboutSection {
+    background-color: #F9F9F9;
+    border-left: 4px solid #F7BF50;
+}
+
+.aboutSection em {
+    color: #241C0F;
+    font-style: italic;
+}
+
+/*------------ What I Do Section ----------------------------*/
+.whatIDo {
+    background-color: #FFE595;
+    color: #241C0F;
+}
+
+.whatIDo h2 {
+    color: #241C0F;
+}
+
+.competencyList {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.competencyList li {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: rgb(247, 191, 80, 0.3);
+    border-left: 4px solid #241C0F;
+    font-size: 1.7rem;
+}
+
+.competencyList strong {
+    color: #241C0F;
+    font-size: 1.9rem;
+}
+
+/*------------ What Drives Me Section ----------------------------*/
+.drivesMe {
+    background-color: rgb(36, 28, 15, 0.9);
+    color: #F9F9F9;
+}
+
+.drivesMe h2 {
+    color: #F7BF50;
+    border-bottom-color: #FFE595;
+}
+
+.drivesMe .tagline {
+    color: #FFE595;
+}
+
+.valuesList {
+    background-color: rgb(255, 229, 149, 0.1);
+    padding: 20px;
+    border-left: 4px solid #F7BF50;
+    margin: 25px 0;
+}
+
+.valuesList h3 {
+    color: #FFE595;
+    margin-bottom: 15px;
+}
+
+.valuesList ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.valuesList li {
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+}
+
+/*------------ My Approach Section ----------------------------*/
+.approach {
+    background-color: #F9F9F9;
+    border-left: 4px solid #F7BF50;
+}
+
+.approach ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.approach li {
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+}
+
+/*------------ Career Highlights Section ----------------------------*/
+.highlights {
+    background-color: #FFE595;
+    color: #241C0F;
+}
+
+.highlights h2 {
+    color: #241C0F;
+}
+
+.highlightItem {
+    margin-bottom: 30px;
+    padding-left: 25px;
+    border-left: 4px solid #241C0F;
+}
+
+.highlightItem h3 {
+    color: #241C0F;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.highlightItem p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+/*------------ What I'm Looking For Section ----------------------------*/
+.lookingFor {
+    background-color: rgb(36, 28, 15, 0.9);
+    color: #F9F9F9;
+}
+
+.lookingFor h2 {
+    color: #F7BF50;
+    border-bottom-color: #FFE595;
+}
+
+.lookingFor ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.lookingFor li {
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+
+.lookingFor strong {
+    color: #FFE595;
+}
+
+.idealRoles {
+    background-color: rgb(255, 229, 149, 0.1);
+    padding: 20px;
+    border-left: 4px solid #F7BF50;
+    margin-top: 25px;
+}
+
+.idealRoles p {
+    margin: 0;
+}
+
+/*------------ Beyond Work Section ----------------------------*/
+.beyondWork {
+    background-color: #F9F9F9;
+    border-left: 4px solid #F7BF50;
+}
+
+/*------------ Quote Section ----------------------------*/
+.quote {
+    background-color: #413E39;
+    padding: 40px;
+}
+
+.quote blockquote {
+    font-size: 2.4rem;
+    font-style: italic;
+    color: #F7BF50;
+    padding: 30px;
+    margin: 0;
+    background-color: rgb(255, 229, 149, 0.1);
+    border-left: 6px solid #F7BF50;
+    line-height: 1.5;
+}
+
+/*------------ Connect Section ----------------------------*/
+.connect {
+    background-color: #FFE595;
+    color: #241C0F;
+    text-align: center;
+}
+
+.connect h2 {
+    color: #241C0F;
+}
+
+.connect strong {
+    color: #241C0F;
+}
+
+/*------------ Footer ----------------------------*/
+footer {
+    background-color: #241C0F;
+    color: #F9F9F9;
+    border-top: solid 4px #F7BF50;
+    flex-shrink: 0;
+}
+
+.socialAndDesign {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socialAndDesign li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.socialAndDesign img {
+    width: 48px;
+}
+
+.socialAndDesign img:hover {
+    outline: 12px solid #F7BF50;
+    opacity: 0.7;
+}
+
+/*------------ Media Queries ----------------------------*/
+@media screen and (max-width: 762px) {
+    .content-wrapper {
+        padding: 10px 20px 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 4.7rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    .about header::before {
+        height: 100px;
+    }
+
+    .quote blockquote {
+        font-size: 2rem;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    .competencyList li,
+    .approach li,
+    .lookingFor li {
+        font-size: 1.6rem;
+    }
+
+    .highlightItem h3 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .homeLink {
+        position: absolute;
+    }
+}
