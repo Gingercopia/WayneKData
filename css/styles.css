@@ -90,6 +90,15 @@ a:active {
     flex: 1 0 auto;
 }
 
+.site-nav a {
+     flex: 1 1 0;
+     text-align: center;
+     color: #F7BF50;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 1.6rem;
+     padding: 6px 8px;
+}
 .about header::before {
     background: url(../images/mountainRoad.jpg) center;
     background-size: cover;
@@ -144,7 +153,6 @@ a:active {
     font-size: 1.8rem;
     z-index: 1000;
 }
-
 .homeLink:hover {
     color: #241C0F;
     background-color: #F7BF50;
@@ -166,23 +174,56 @@ a:active {
     background-color: #241C0F;
     color: #F9F9F9;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 12px 10px;
+    align-items: center;
+    padding: 12px 16px;
     z-index: 1000;
 }
 
 .site-nav a {
+    flex: 1 1 0;
+    text-align: center;
     color: #F7BF50;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.6rem;
+    padding: 6px 8px;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
     text-decoration: underline;
     outline: none;
+}
+
+/* Box style for each nav link */
+.site-nav {
+    gap: 12px;
+}
+
+.site-nav a {
+    border: 1px solid rgba(255,229,149,0.25);
+    border-radius: 8px;
+    background-color: rgba(255,229,149,0.03);
+    display: block;
+}
+
+/* Active page styling */
+.site-nav a[aria-current="page"] {
+    background-color: #FFE595;
+    color: #241C0F;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Slightly different contrast when nav overlays the about banner */
+.about .site-nav a {
+    background-color: rgba(255,229,149,0.04);
+    border-color: rgba(255,229,149,0.35);
+}
+
+.about .site-nav a[aria-current="page"] {
+    background-color: #FFE595;
+    color: #241C0F;
 }
 
 /*------------ Section Styles ----------------------------*/
