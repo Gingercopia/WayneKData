@@ -98,6 +98,39 @@ a:active {
     height: 200px;
 }
 
+/* Ensure nav can overlay the about page banner */
+.about header {
+    position: relative;
+}
+
+.about .site-nav {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(36, 28, 15, 0.65);
+    color: #F9F9F9;
+    display: flex;
+    gap: 18px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    z-index: 2000;
+}
+
+.about .site-nav a {
+    color: #FFE595;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 762px) {
+    .about .site-nav {
+        left: 8px;
+        transform: none;
+        right: 8px;
+        justify-content: space-between;
+    }
+}
+
 .homeLink {
     position: fixed;
     top: 5px;
