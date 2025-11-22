@@ -120,8 +120,36 @@ a:active {
 
 .content-wrapper {
     margin: 0 auto;
-    padding: 10px 40px 40px;
+    padding: 80px 40px 40px;
     max-width: 900px;
+}
+
+/*------------ Site Navigation ----------------------------*/
+.site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #241C0F;
+    color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 10px;
+    z-index: 1000;
+}
+
+.site-nav a {
+    color: #F7BF50;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    text-decoration: underline;
+    outline: none;
 }
 
 /*------------ Section Styles ----------------------------*/
